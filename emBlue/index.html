@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User List</title>
+    <link rel="stylesheet" type="text/css" href="./css/stylesheet.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+<div id="flexbox">
+    <div id="filter-container">
+        <input type="text" id="filter" placeholder="&#128269; Enter a name, address, or phone number">
+    </div>
+    <div id="people">
+        <div id="noOne" style="display: none;">
+            <div class="pic"><img src="no-user.png" style="max-height:72px; "/></div>
+            <div class="info">
+                No Name<br>
+                <span class="smallData">
+                    No phone<br>No address
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="overlay">
+    <div id="full-data" style="display: none"><span id="back">&#8617;    Back</span></div>
+</div>
+</body>
+<script type="text/javascript" src="./js/script.js"></script>
+</html>

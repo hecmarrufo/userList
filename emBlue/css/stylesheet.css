@@ -1,0 +1,125 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: #DFDBE5;
+    background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%239C92AC' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+}
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+#flexbox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#people{
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #FBFEF9;
+    padding: 2%;
+}
+.person{
+    display: flex;
+    border-radius: 10px;
+    background-color: #FBFEF9;
+    padding: 2%;
+    margin-bottom: 1.5%;
+    box-shadow: 3px 3px 5px #dadada;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.person:hover{
+    background-color: #dadada;
+}
+.info{
+    font-size: 1.2em;
+}
+.smallData{
+    opacity: 0.7;
+    font-size: 0.8em;
+}
+.pic{
+    margin-right: 1em;
+}
+.pic>img{
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#overlay{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-y:visible;
+}
+#full-data{
+    display: inline-flex;
+    flex-direction: column;
+    top: 2%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    background-color: #FBFEF9;
+    position: absolute;
+    padding: 20px;
+}
+#filter-container{
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 1%;
+}
+#filter{
+    width: 22em;
+    border-radius: 10px;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+#back{
+    cursor: pointer;
+    padding: 3px;
+    max-height: 50px;
+    margin-left: auto;
+    background: #EA4335;
+    opacity: 0.6;
+    color: #FBFEF9;
+    border-radius: 10px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-weight: bold;
+    transition: 0.5s ease-in-out;
+    box-shadow: none;
+}
+#back:hover{
+    opacity: 0.9;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.infoFD{
+}
+.fullName{
+    font-weight: bold;
+    font-size: 1.5em;
+    padding-bottom: 5px;
+}
+.titles{
+    font-size: 1.2em;
+    padding-bottom: 5px;
+}
+#fullPic{
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.fullData>span{
+    opacity: 0.5;
+}
+.blur-all {
+    filter: blur(10px);
+    pointer-events: none;
+}
+#noOne{
+    display: flex;
+    width: 300px;
+}
